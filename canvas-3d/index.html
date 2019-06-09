@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/mathjs@6.0.0/dist/math.min.js"></script>
+    <script>
+    if(typeof math == 'undefined'){
+      document.write(unescape("%3Cscript src='/scripts/math-6.0.0.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    <script async src="scripts/__helpers.js"></script>
+    <script async src="scripts/__data.js"></script>
+    <script async src="scripts/script.js"></script>
+    <style type="text/css">
+      #canvas-container {
+        width: 100%;
+        text-align: center;
+      }
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body onload="loaded();">
+    <div id="canvas-container">
+      <canvas id="canvas" width="500" height="500">
+      </canvas>
+    </div>
+  </body>
+</html>
