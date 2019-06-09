@@ -30,7 +30,6 @@ var camera = {
   }
 }
 
-
 function deg2rad(degrees){
   return (degrees * Math.PI / 180.0);
 }
@@ -45,4 +44,12 @@ function cos(rad){
 
 function m_mult(a, b){
   return math.multiply(a, b);
+}
+
+function sortFunction(a, b){
+  if(a[1] === b[1]){
+    return 0;
+  }else{
+    return (a[1] < b[1]) ? -1 : 1;
+  }
 }
